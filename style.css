@@ -1,4 +1,4 @@
-/* GENERAL */
+                                                                   /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -7,26 +7,41 @@
   padding: 0;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
+
+  
+  /* background: linear-gradient(270deg, #9fcfe6, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; } */
+  background-image: url('./assets/backgrounds/sky1.jpg');
+  background-repeat: repeat; /* This repeats the pattern */
+
+
+  
 }
 
 html {
   scroll-behavior: smooth;
 }
-
+/* Secondary color */
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(0, 62, 138);
 }
 
-/* TRANSITION */
+                                                                   /* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
+                                                                   /* DESKTOP NAV */
 
 nav,
 .nav-links {
@@ -44,18 +59,17 @@ nav {
   list-style: none;
   font-size: 1.5rem;
 }
-
+/* Contact Me color */
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: rgb(255, 255, 255);
 }
-
 a:hover {
-  color: grey;
+  color: rgb(43, 99, 173);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -66,7 +80,7 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+                                                                   /* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
@@ -103,7 +117,6 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
-
 .menu-links a {
   display: block;
   padding: 10px;
@@ -146,7 +159,7 @@ a:hover {
   transform: none;
 }
 
-/* SECTIONS */
+                                                                   /* SECTIONS */
 
 section {
   padding-top: 4vh;
@@ -158,15 +171,17 @@ section {
 
 .section-container {
   display: flex;
+  
 }
 
-/* PROFILE SECTION */
+                                                                   /* PROFILE SECTION */
 
 #profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  
 }
 
 .section__pic-container {
@@ -174,11 +189,13 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  
 }
 
 .section__text {
   align-self: center;
   text-align: center;
+  
 }
 
 .section__text p {
@@ -202,18 +219,18 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   gap: 1rem;
 }
 
-/* ICONS */
+                                                                   /* ICONS */
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* BUTTONS */
+                                                                   /* BUTTONS */
 
 .btn-container {
   display: flex;
@@ -261,14 +278,16 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+                                                                   /* ABOUT SECTION */
 
 #about {
   position: relative;
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -314,7 +333,7 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+                                                                   /* EXPERIENCE SECTION */
 
 #experience {
   position: relative;
@@ -323,8 +342,8 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+  font-size: 1.65rem;
+  margin-bottom: 1.2rem;
 }
 
 .experience-details-container {
@@ -332,13 +351,13 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
+                                                                  /* Gapss for Experience */
 .article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 0.6rem;
   justify-content: space-around;
 }
 
@@ -353,15 +372,17 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+                                                                   /* PROJECTS SECTION */
 
 #projects {
   position: relative;
+  height: fit-content;
 }
-
+                                            /* Mess here */
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  
 }
 
 .project-img {
@@ -380,13 +401,13 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+                                                                   /* CONTACT */
 
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: fit-content;
 }
 
 .contact-info-upper-container {
@@ -396,6 +417,7 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
+  background-color: rgb(255, 255, 255);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -420,7 +442,7 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+                                                                   /* FOOTER SECTION */
 
 footer {
   height: 26vh;
