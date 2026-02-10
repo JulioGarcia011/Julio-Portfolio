@@ -456,7 +456,7 @@ article .icon {
                                                                    /* AUDIO CONTROL BUTTON SECTION */
 .audio-btn {
   position: fixed;
-  bottom: 15px;
+  bottom: 5px;
   left: 30px;
   width: 55px;
   height: 55px;
@@ -471,8 +471,8 @@ article .icon {
 }
 
 .audio-btn img {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
 
 
