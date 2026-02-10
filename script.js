@@ -14,12 +14,12 @@ const bgMusic = document.getElementById("bg-music");
 const audioBtn = document.getElementById("audio-btn");
 const audioIcon = document.getElementById("audio-icon");
 
-bgMusic.volume = 0.25;
+bgMusic.volume = 0.95;
 
 // Auto-start music on first user interaction
 const startMusic = () => {
   bgMusic.play().then(() => {
-    audioIcon.src = "./assets/backgrounds/space1.png";
+    audioIcon.src = "./assets/backgrounds/darkguitar.png";
   }).catch(() => {});
 
   document.removeEventListener("click", startMusic);
@@ -35,9 +35,9 @@ audioBtn.addEventListener("click", (e) => {
 
   if (bgMusic.paused) {
     bgMusic.play();
-    audioIcon.src = "./assets/backgrounds/space1.png";
+    audioIcon.src = "./assets/backgrounds/darkguitar.png";
   } else {
     bgMusic.pause();
-    audioIcon.src = "./assets/backgrounds/space1.png";
+    audioIcon.src = "./assets/backgrounds/darkguitar.png";
   }
 });
