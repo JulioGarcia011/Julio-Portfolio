@@ -451,6 +451,31 @@ article .icon {
   height: 2.5rem;
 }
 
+
+
+                                                                   /* AUDIO CONTROL BUTTON SECTION */
+.audio-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio-btn img {
+  width: 26px;
+  height: 26px;
+}
+
+
                                                                    /* FOOTER SECTION */
 
 footer {

@@ -10,6 +10,11 @@
     <link rel="icon" href="/favi1.png" type="image/x-icon" />
   </head>
   <body>
+
+    <audio id="bg-music" loop>
+  <source src="./assets/backgrounds/BunnyAudio.mp3" type="audio/mpeg">
+</audio>
+
     <nav id="desktop-nav">
       <div class="logo">Julio Garcia</div>
       <div>
@@ -775,6 +780,20 @@ onclick="location.href='./#contact'"
       </nav>
       <p>Copyright &#169; 2024 Julio C. Garcia. All Rights Reserved.<br/>Site last updated: February 2026.</p>
     </footer>
+
+<!-- Background Audio -->
+<audio id="bg-music" loop>
+  <source src="./assets/backgrounds/BunnyAudio.mp3" type="audio/mpeg">
+</audio>
+<!-- Play / Pause Button -->
+<button id="audio-btn" class="audio-btn">
+  <img
+    id="audio-icon"
+    src="./assets/backgrounds/space1.png"
+    alt="Pause background music"
+  />
+</button>
+
     <script src="script.js"></script>
   </body>
 </html>

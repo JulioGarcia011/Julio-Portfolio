@@ -102,3 +102,9 @@
     text-align: justify;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .audio-btn {
+    display: none;
+  }
+}
